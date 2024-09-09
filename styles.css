@@ -55,7 +55,7 @@ section {
 
 /* Background image for the #home section */
 #home {
-    background-image: url('images/image.png'); /* Ensure this path matches your file location */
+    background-image: url('openart-image_lV5Khspf_1725842785104_raw.png'); /* Ensure this path matches your file location */
     background-size: cover; /* Cover the entire section */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Prevent the image from repeating */
