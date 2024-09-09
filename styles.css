@@ -53,6 +53,20 @@ section {
     text-align: center;
 }
 
+/* Background image for the #home section */
+#home {
+    background-image: url('images/image.png'); /* Ensure this path matches your file location */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Adjust text color for readability */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Optional: add shadow for better visibility */
+}
+
 #how-it-works, #mission, #contact {
     background-color: #f9f9f9;
     margin-top: 50px;
