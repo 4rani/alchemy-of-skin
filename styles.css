@@ -5,6 +5,26 @@ body {
     padding: 0;
     height: 2000px; /* Increase page height */
 }
+/* Move Alchemy of Skin to the left */
+#alchemy {
+    position: absolute;
+    left: 10px;
+    top: 20px;
+    text-transform: uppercase; /* Make text all caps */
+}
+
+/* Ensure Contact Me is not cut off */
+nav {
+    display: flex;
+    justify-content: space-between; /* Space out the menu items */
+    padding: 10px 20px;
+    overflow: visible; /* Ensure nothing is cut off */
+}
+
+nav a {
+    margin-right: 20px; /* Add spacing between the links */
+    white-space: nowrap; /* Prevent text from wrapping */
+}
 
 /* Navigation styles */
 nav {
@@ -66,7 +86,7 @@ header h1 {
 
 /* Finder box styling */
 .finder-box {
-    background-color: #f9f9f9;
+    background-color: transparent;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
