@@ -3,50 +3,47 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    height: 2000px; /* Increase page height */
-}
-/* Move Alchemy of Skin to the left */
-#alchemy {
-    position: absolute;
-    left: 10px;
-    top: 20px;
-    text-transform: uppercase; /* Make text all caps */
-}
-
-/* Ensure Contact Me is not cut off */
-nav {
-    display: flex;
-    justify-content: space-between; /* Space out the menu items */
-    padding: 10px 20px;
-    overflow: visible; /* Ensure nothing is cut off */
-}
-
-nav a {
-    margin-right: 20px; /* Add spacing between the links */
-    white-space: nowrap; /* Prevent text from wrapping */
+    height: 2000px;
 }
 
 /* Navigation styles */
 nav {
-    background-color: #fff;
-    text-align: right;
+    display: flex;
+    justify-content: space-between;
     padding: 20px;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
+    background-color: #fff;
     z-index: 1000;
 }
 
+/* Alchemy of Skin on the left */
+#alchemy {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Separate navigation sections */
 nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    display: flex;
 }
 
+nav ul.left {
+    justify-content: flex-start;
+}
+
+nav ul.right {
+    justify-content: flex-end;
+}
+
+/* Navigation items */
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+    margin-right: 20px;
 }
 
 nav ul li a {
@@ -56,41 +53,36 @@ nav ul li a {
     font-size: 16px;
 }
 
-/* Header styles */
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
-    z-index: 1000;
+/* Central text styling */
+.center-box h1 {
+    font-size: 32px;
+    text-align: center;
+    line-height: 1.2;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 24px;
-}
-
-/* Central transparent text box */
 .center-box {
-    background-color: transparent; /* Make the background transparent */
+    background-color: transparent;
     color: white;
     padding: 20px;
     text-align: center;
-    margin: 150px auto; /* Center the box and move it down */
-    width: 80%;
-    max-width: 800px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add shadow for visibility */
+    margin-top: 200px;
 }
 
-/* Finder box styling */
+.center-box h1:first-child {
+    margin-bottom: 0;
+}
+
+.center-box h1:nth-child(2) {
+    margin-top: 0;
+}
+
+/* Product finder styling */
 .finder-box {
     background-color: transparent;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 20px; /* Adds space between header text and form */
+    margin-top: 20px;
 }
 
 /* Form styling */
@@ -98,10 +90,6 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-form label {
-    margin-bottom: 5px;
 }
 
 form input[type="text"] {
@@ -120,59 +108,22 @@ form input[type="submit"] {
     background-color: #007bff;
     color: white;
     cursor: pointer;
-    font-size: 16px;
 }
 
 form input[type="submit"]:hover {
     background-color: #0056b3;
 }
 
-/* Headings */
-h1 {
-    font-size: 24px;
-}
-
-h2 {
-    font-size: 22px;
-}
-
-/* Section styles */
-section {
-    padding: 60px 20px;
-    text-align: center;
-}
-
 /* Background image for the #home section */
 #home {
-    background-image: url('openart-image_lV5Khspf_1725842785104_raw.png'); /* Ensure this path matches your file location */
-    background-size: cover; /* Cover the entire section */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Prevent the image from repeating */
-    height: 100vh; /* Full viewport height */
+    background-image: url('openart-image_lV5Khspf_1725842785104_raw.png'); /* Update this path as needed */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white; /* Adjust text color for readability */
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Optional: add shadow for better visibility */
-}
-
-/* Styles for sections with light background */
-#how-it-works, #mission, #contact {
-    background-color: #f9f9f9;
-    margin-top: 50px;
-}
-
-/* Paragraph styles */
-p {
-    font-size: 18px;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #f1f1f1;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    color: white;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
 }
