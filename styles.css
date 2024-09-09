@@ -19,7 +19,6 @@ nav {
     z-index: 1000;
 }
 
-/* Alchemy of Skin on the left */
 #alchemy {
     text-transform: uppercase;
     font-weight: bold;
@@ -41,7 +40,6 @@ nav ul.right {
     justify-content: flex-end;
 }
 
-/* Navigation items */
 nav ul li {
     margin-right: 20px;
 }
@@ -92,6 +90,21 @@ form {
     align-items: center;
 }
 
+/* Side-by-side inputs */
+.product-inputs {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Input boxes styling */
 form input[type="text"] {
     padding: 10px;
     margin-bottom: 10px;
@@ -112,6 +125,16 @@ form input[type="submit"] {
 
 form input[type="submit"]:hover {
     background-color: #0056b3;
+}
+
+/* Ingredients display area */
+#ingredients1, #ingredients2 {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 4px;
+    width: 300px;
+    text-align: center;
+    margin-top: 10px;
 }
 
 /* Background image for the #home section */
