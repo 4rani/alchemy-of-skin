@@ -30,17 +30,20 @@
             <div class="finder-box">
                 <h2>Product Ingredients Finder</h2>
                 <form id="productForm">
-                    <label for="product1">Product 1:</label>
-                    <input type="text" id="product1" name="product1" placeholder="Enter product name">
-                    <br><br>
-                    <label for="product2">Product 2:</label>
-                    <input type="text" id="product2" name="product2" placeholder="Enter product name">
-                    <br><br>
+                    <div class="product-inputs">
+                        <div class="input-box">
+                            <label for="product1">Product 1:</label>
+                            <input type="text" id="product1" name="product1" placeholder="Enter product name">
+                            <div id="ingredients1">Ingredients for Product 1 will appear here.</div>
+                        </div>
+                        <div class="input-box">
+                            <label for="product2">Product 2:</label>
+                            <input type="text" id="product2" name="product2" placeholder="Enter product name">
+                            <div id="ingredients2">Ingredients for Product 2 will appear here.</div>
+                        </div>
+                    </div>
                     <input type="submit" value="Find Ingredients">
                 </form>
-                <h2>Ingredients</h2>
-                <div id="ingredients1">Ingredients for Product 1 will appear here.</div>
-                <div id="ingredients2">Ingredients for Product 2 will appear here.</div>
             </div>
         </div>
     </section>
