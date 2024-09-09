@@ -136,3 +136,11 @@ form input[type="submit"]:hover {
     text-align: center;
     margin-top: 10px;
 }
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden; /* Hide horizontal scroll */
+    overflow-y: auto;   /* Allow vertical scroll */
+}
+
