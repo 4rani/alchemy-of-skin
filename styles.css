@@ -136,17 +136,3 @@ form input[type="submit"]:hover {
     text-align: center;
     margin-top: 10px;
 }
-
-/* Background image for the #home section */
-#home {
-    background-image: url('openart-image_lV5Khspf_1725842785104_raw.png'); /* Update this path as needed */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
-}
