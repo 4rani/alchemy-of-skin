@@ -11,6 +11,11 @@ nav {
     background-color: #fff;
     text-align: right;
     padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 nav ul {
@@ -31,6 +36,22 @@ nav ul li a {
     font-size: 16px;
 }
 
+/* Header styles */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
 /* Central transparent text box */
 .center-box {
     background-color: transparent; /* Make the background transparent */
@@ -41,6 +62,49 @@ nav ul li a {
     width: 80%;
     max-width: 800px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add shadow for visibility */
+}
+
+/* Finder box styling */
+.finder-box {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* Adds space between header text and form */
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form input[type="text"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #0056b3;
 }
 
 /* Headings */
