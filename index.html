@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alchemy of Skin</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-
     <!-- Navigation -->
     <nav>
         <ul>
@@ -18,59 +18,53 @@
         </ul>
     </nav>
 
+    <!-- Header with title -->
+    <header>
+        <h1>Alchemy of Skin</h1>
+    </header>
+
     <!-- Central section -->
     <section id="home">
         <div class="center-box">
             <h1>Instantly check for harmful ingredient combos in your skincare routine!</h1>
+            <!-- Product Ingredients Finder Form -->
+            <div class="finder-box">
+                <h2>Product Ingredients Finder</h2>
+                <form id="productForm">
+                    <label for="product1">Product 1:</label>
+                    <input type="text" id="product1" name="product1" placeholder="Enter product name">
+                    <br><br>
+                    <label for="product2">Product 2:</label>
+                    <input type="text" id="product2" name="product2" placeholder="Enter product name">
+                    <br><br>
+                    <input type="submit" value="Find Ingredients">
+                </form>
+                <h2>Ingredients</h2>
+                <div id="ingredients1">Ingredients for Product 1 will appear here.</div>
+                <div id="ingredients2">Ingredients for Product 2 will appear here.</div>
+            </div>
         </div>
     </section>
 
     <!-- Other sections for the buttons to scroll to -->
     <section id="how-it-works">
         <h2>How it Works</h2>
-        <p>To use the ingrediant comparer, simply type the name of two skincare products in the boxes and hit enter. This program will retive the ingrediant list for each product, and conduct an analysis on both, comparing them and informing you if any pairings of products could be damaging to your skin based on the chemical composition of the product.</p>
+        <p>To use the ingredient comparer, simply type the name of two skincare products in the boxes and hit enter. This program will retrieve the ingredient list for each product, and conduct an analysis on both, comparing them and informing you if any pairings of products could be damaging to your skin based on the chemical composition of the product.</p>
     </section>
 
     <section id="mission">
         <h2>My Mission</h2>
-        <p>I was really uneducated on what to use for acne, and I kinda just went with whatever had good reviews. I ended up using products that had Retinol or Benzoyl Peroxide, which when mixed irritates your skin. Don't be a dumbass like me. I created this website as a resource for people to make smarter skincare decisions.Combining certain ingredients can reduce their effectiveness, amplify skin irritation, or destabilize key ingredients. It's important to know what works with each other—and what doesn’t  .</p>
+        <p>I was really uneducated on what to use for acne, and I kinda just went with whatever had good reviews. I ended up using products that had Retinol or Benzoyl Peroxide, which when mixed irritates your skin. Don't be a dumbass like me. I created this website as a resource for people to make smarter skincare decisions. Combining certain ingredients can reduce their effectiveness, amplify skin irritation, or destabilize key ingredients. It's important to know what works with each other—and what doesn’t.</p>
     </section>
 
     <section id="contact">
         <h2>Contact Me</h2>
-        <p>If you have any ideas on improvements to the site, or any issues you found, let me know!
-        raniakki07@gmail.com...</p>
+        <p>If you have any ideas on improvements to the site, or any issues you found, let me know! raniakki07@gmail.com...</p>
     </section>
 
-
-</body>
-</html>
-
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Alchemy of Skin. All rights reserved.</p>
     </footer>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Ingredients Finder</title>
-    <script src="script.js" defer></script>
-</head>
-<body>
-    <h1>Product Ingredients Finder</h1>
-    <form id="productForm">
-        <label for="product1">Product 1:</label>
-        <input type="text" id="product1" name="product1" placeholder="Enter product name">
-        <br><br>
-        <label for="product2">Product 2:</label>
-        <input type="text" id="product2" name="product2" placeholder="Enter product name">
-        <br><br>
-        <input type="submit" value="Find Ingredients">
-    </form>
-
-    <h2>Ingredients</h2>
-    <div id="ingredients1">Ingredients for Product 1 will appear here.</div>
-    <div id="ingredients2">Ingredients for Product 2 will appear here.</div>
 </body>
 </html>
