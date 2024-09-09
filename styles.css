@@ -31,20 +31,25 @@ nav ul li a {
     font-size: 16px;
 }
 
-/* Central gray text box */
+/* Central transparent text box */
 .center-box {
-    background-color: gray;
+    background-color: transparent; /* Make the background transparent */
     color: white;
     padding: 20px;
     text-align: center;
-    margin: 150px auto; /* Move it down */
+    margin: 150px auto; /* Center the box and move it down */
     width: 80%;
     max-width: 800px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add shadow for visibility */
 }
 
+/* Headings */
 h1 {
     font-size: 24px;
+}
+
+h2 {
+    font-size: 22px;
 }
 
 /* Section styles */
@@ -67,15 +72,13 @@ section {
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Optional: add shadow for better visibility */
 }
 
+/* Styles for sections with light background */
 #how-it-works, #mission, #contact {
     background-color: #f9f9f9;
     margin-top: 50px;
 }
 
-h2 {
-    font-size: 22px;
-}
-
+/* Paragraph styles */
 p {
     font-size: 18px;
 }
